@@ -13,7 +13,8 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "elevenlabs": "^1.56.1",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "node-wav": "^0.0.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.7"
