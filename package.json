@@ -1,0 +1,28 @@
+{
+  "name": "avr-stt-elevenlabs",
+  "version": "1.0.0",
+  "author": "Agent Voice Response <info@agentvoiceresponse.com>",
+  "description": "This repository provides a speech-to-text transcription service using ElevenLabs API integrated with the Agent Voice Response system.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "start:dev": "nodemon --inspect ./index.js",
+    "dc:build": "docker build --platform=linux/amd64 -t agentvoiceresponse/avr-stt-elevenlabs:latest -t agentvoiceresponse/avr-stt-elevenlabs:${npm_package_version} .",
+    "dc:push": "docker push agentvoiceresponse/avr-stt-elevenlabs:latest && docker push agentvoiceresponse/avr-stt-elevenlabs:${npm_package_version}"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "elevenlabs": "^1.56.1",
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  },
+  "contributors": [
+    {
+      "name": "Giuseppe Careri",
+      "email": "info@gcareri.com",
+      "url": "https://github.com/gcareri"
+    }
+  ]
+}
